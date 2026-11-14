@@ -1,0 +1,376 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Matt Daniel T. Sacayan | Portfolio</title>
+        <!-- Tailwind CSS -->   
+         <script src="https://cdn.tailwindcss.com"></script> 
+
+         <style> 
+         html { 
+         scroll-behavior: smooth;           
+         scroll-padding-top: 90px;
+         } 
+
+         body { 
+            background-color: #101010;
+         } 
+           /* Header */
+           #header {
+            background: rgba(25, 25, 25, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+         }
+         /* Navigation */ 
+         .nav-link {
+            color: #a3a3a3; 
+            transition: 0.3s ease;
+         }
+         .nav-link:hover { 
+            color: #b7ff5a;
+         }
+         /* Buttons */
+         .btn {
+            transition: 0.3s ease;
+        }
+        .btn:hover { 
+            transform: scale(1.05);
+            background-color: #a3e635;
+        } 
+        /* Profile Picture */ 
+        .profile-picture { 
+            transition: 0.3s ease;
+        }
+        .profile-picture:hover {
+            transform: scale(1.03);
+        }
+        /* Project Cards */
+        .project-card { 
+            transition: 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #b7ff5a;
+        }
+        /* Skill Cards */
+        .skill-card {
+            transition: 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: #b7ff5a;
+        }
+        </style>
+        </head>
+
+        <body class="bg-[#101010] text-white antialiased">
+            <!-- HEADER -->
+             <header id="header" class="fixed top-0 left-0 w-full z-50 border-bborder-white/10">
+                <nav class="max-w-6xl mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-5">
+                    <a href="#home" class="flex items-center gap-3 text-xl font-bold">
+                        <img 
+                        src="images/cpc.jpg"
+                        alt="Cordova Public College Logo"
+                        class="w-10 h-10 rounded-full object-cover">
+                        <span>Matt Daniel T. Sacayan<span class="text-lime-400">.</span>
+                    </a>
+                    <div class="flex flex-wrap items-center gap-5 text-sm">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About Me</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#experiences" class="nav-link">Experiences</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+
+                    <a href="#contact"class="hidden sm:block border border-lime-400 text-lime-400 px-5 py-2 rounded-full text-sm btn">
+                        Let's Talk
+                    </a>
+
+                </nav>
+             </header> 
+
+             <main>
+                <!-- HERO SECTION -->
+                 <section id="home" class="max-w-6xl mx-auto px-6 pt-40 pb-24">
+                    <div class="grid md:grid-cols-2 items-center gap-12">
+                        <!-- INTRODUCTION -->
+                         <div>
+                            <p class="text-lime-400 uppercase tracking-widest text-sm mb-6">
+                                Hello, I'm Matt Daniel T. Sacayan
+                            </p>
+                            <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight">
+                                Welcome To
+                                <span class="text-lime-400">My Portfolio</span>
+                            </h1>
+
+                            <p class="max-w-xl text-lg text-gray-400 leading-relaxed mt-8">
+                                I am a joyful and responsible person who loves
+                                learning new things. I enjoy spending time with
+                                my friends and exploring my interests. I always
+                                try my best to improve myself and achieve my
+                                dreams for the future.
+                            </p>
+
+                            <a href="#experiences"class="inline-block mt-8 bg-lime-400 text-black font-
+                            semibold px-7 py-4 rounded-full btn">
+                            My Experiences
+                           </a>
+                         </div>
+
+                         <!-- PROFILE PICTURE -->
+                          <div class="flex justify-center md:justify-end">
+                            <img
+                            src="images/profile.jpg"
+                            alt="My Profile Picture"
+                            class="profile-picture w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-lime-400 shadow-xl">
+                          </div>
+
+                    </div>
+
+                    <!-- INFORMATION CARDS -->
+                     <div class="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-5">
+                        <div class="bg-[#191919] border border-white/10 rounded-2xl p-6">
+                            <p class="text-3xl font-bold text-lime-400">CPC</p>
+                            <p class="mt-2 text-sm text-gray-400">School</p>
+                        </div>
+                        <div class="bg-[#191919] border border-white/10 rounded-2xl p-6">
+                            <p class="text-3xl font-bold text-lime-400">BSIT</p>
+                            <p class="mt-2 text-sm text-gray-400">Program</p>
+
+                        </div>
+
+                        <div class="bg-[#191919] border border-white/10 rounded-2xl p-6">
+                            <p class="text-xl font-bold text-lime-400">
+                                Sir Nelmar Buncag
+                            </p>
+                            <p class="mt-2 text-sm text-gray-400">Instructor</p>
+                        </div>
+                     </div>
+                 </section>
+
+                 <!-- ABOUT ME -->
+                  <section id="about" class="bg-[#141414] border-y border-white/10">
+                    <div class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12">
+
+                    <div>
+                    <p class="text-lime-400 uppercase tracking-widest text-sm mb-4">
+                        About Myself
+                    </p>
+
+                    <h2 class="text-4xl sm:text-5xl font-bold leading-tight">
+                        A Future IT
+                        <span class="text-lime-400">Professional.</span>
+                    </h2>
+                    </div>
+
+                    <div>
+                        <p class="text-gray-400 leading-8">
+                            I'm a first-year BSIT student at Cordova Public
+                            College. I love learning new technologies,
+                            solving problems, and improving my skills
+                            through hands-on activities.
+
+                            I also enjoy watching anime and playing mobile
+                            games like Mobile Legends and Call of Duty.
+                            During weekends, I like riding my bicycle with
+                            my friends and exploring different places like
+                            Carcar, Danao, Carmen, and Busay.
+                        </p>
+
+                        <p class="text-gray-400 leading-8 mt-5">
+                            My goal is to become an IT professional and
+                            create software that can help people with
+                            their daily activities.
+                        </p>
+
+                        <a href="#contact"class="inline-block mt-8 text-lime-400 border-b border-lime-400 pb-1 hover:text-white transition">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    </div>
+                  </section>
+
+                  <!-- SKILLS -->
+                   <section id="skills" class="max-w-6xl mx-auto px-6 py-24">
+                    <div class="mb-12">
+                        <p class="text-lime-400 uppercase tracking-widest text-sm mb-4">
+                            What I Do
+                        </p>
+                        <h2 class="text-4xl sm:text-5xl font-bold">
+                            My Skills<span class="text-lime-400">.</span>
+                        </h2>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <!-- SKILL 1 -->
+                         <div class="skill-card bg-[#191919] border border-white/10 rounded-2xl p-7">
+                            <span class="text-4xl">🎸</span>
+                            <h3 class="text-xl font-semibold mt-5">
+                                Playing Instruments
+                            </h3>
+
+                            <p class="text-gray-400 text-sm mt-3 leading-6">
+                                Mostly playing guitar.
+                            </p>
+                         </div>
+                         <!-- SKILL 2 -->
+                          <div class="skill-card bg-[#191919] border border-white/10 rounded-2xl p-7">
+                            <span class="text-4xl">🚲</span>
+                            <h3 class="text-xl font-semibold mt-5">
+                                Cycling
+                            </h3>
+
+                            <p class="text-gray-400 text-sm mt-3 leading-6">
+                                Exploring beautiful places.
+                            </p>
+                          </div>
+                          <!-- SKILL 3 -->
+                           <div class="skill-card bg-[#191919] border border-white/10 rounded-2xl p-7">
+                            <span class="text-4xl">🏀</span>
+                            <h3 class="text-xl font-semibold mt-5">
+                                Playing Sports
+                            </h3>
+                            <p class="text-gray-400 text-sm mt-3 leading-6">
+                                Improving physical strength and teamwork.
+                            </p>
+                           </div>
+                    </div>
+                   </section>
+
+                   <!-- EXPERIENCES -->
+                    <section id="experiences" class="bg-[#141414] border-y border-white/10">
+                        <div class="max-w-6xl mx-auto px-6 py-24">
+                            <div class="mb-12">
+                                <p class="text-lime-400 uppercase tracking-widest text-sm mb-4">
+                                    My Journey
+                                </p>
+                                <h2 class="text-4xl sm:text-5xl font-bold">
+                                    My Experiences<span class="text-lime-400">.</span>
+                                </h2>
+
+                                <p class="text-gray-400 mt-4">
+                                    Some of the experiences that I will never forget.
+                                </p>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- PROJECT 1 -->
+                                 <article class="project-card overflow-hidden rounded-2xl border border-white/10 bg-[#191919]">
+
+                                    <!-- PROJECT IMAGE -->
+                                     <div class="h-64 overflow-hidden">
+                                        <img
+                                        src="images/prog.jpg"
+                                        alt="My first C program printing Hello, World!Welcome to Computer Programming 1."
+                                        class="w-full h-full mx-auto object-contain object-top">
+                                     </div>
+                                    <div class="p-5">
+                                        <p class="text-lime-400 text-sm">
+                                            01 / Programming
+                                        </p>
+
+                                        <h3 class="text-2xl font-bold mt-3">
+                                            My First Code
+                                        </h3>
+
+                                        <p class="text-gray-400 mt-3 leading-7">
+                                            My first ever code in the field of programming. It marks the
+                                            new chapter of my journey as a future IT professional. More exciting parts
+                                            awaits for me.
+                                        </p>
+
+                                        <div class="flex flex-wrap gap-2 mt-5">
+                                            <span class="text-xs border border-white/10 rounded-full px-3 py-2">
+                                                C Language
+                                            </span>
+                                        </div>
+                                    </div>
+                                 </article>
+
+                                 <!-- PROJECT 2 -->
+                                  <article class="project-card overflow-hidden rounded-2xl border border-white/10 bg-[#191919]">
+                                    <!-- PROJECT IMAGE -->
+                                     <div class="h-64 overflow-hidden">
+                                        <img
+                                        src="images/itc.jpg"
+                                        alt="My First HTML Portfolio Project"
+                                        class="w-full h-full mx-auto object-contain object-top">
+                                     </div>
+
+                                     <!-- PROJECT INFORMATION -->
+                                      <div class="p-7">
+                                        <p class="text-lime-400 text-sm">
+                                            02 / Personal Project
+                                        </p>
+                                        <h3 class="text-2xl font-bold mt-3">
+                                            Simple Portfolio
+                                        </h3>
+
+                                        <p class="text-gray-400 mt-3 leading-7">
+                                            My first HTML project where I created a simple personal
+                                            webpage introducing myself, my interests, and my passion
+                                            for learning computer programming.
+                                        </p>
+
+                                        <div class="flex flex-wrap gap-2 mt-5">
+                                            <span class="text-xs border border-white/10 rounded-full px-3 py-2">
+                                                HTML
+                                            </span>
+                                        </div>
+                                      </div>
+                                  </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CONTACT -->
+
+                    <section id="contact" class="max-w-6xl mx-auto px-6 py-28">
+                        <p class="text-lime-400 uppercase tracking-widest text-sm mb-5">
+                            Get in Touch
+                        </p>
+                        <h2 class="text-4xl sm:text-6xl font-bold leading-tight max-w-4xl">
+                            Got a question in your mind?
+                            <span class="text-lime-400">Let's hear it.</span>
+                        </h2>
+
+                        <p class="text-gray-400 mt-6 max-w-xl leading-7">
+                            I'm open to opportunities, collaborations, and
+                            interesting projects. Feel free to contact me 
+                            through my email or visit my GitHub profile.
+                        </p>
+
+                        <div class="flex flex-wrap gap-4 mt-10">
+                            <!-- GMAIL -->
+                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mattdanielsacayan@gmail.com"
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             class="bg-lime-400 text-black font-semibold px-7 py-4 rounded-full">
+                            Email Me
+                        </a>
+
+                        <!-- GITHUB -->
+                         <a href="https://github.com/Mxttdnn"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         class="btn border border-white/20 px-7 py-4 rounded-full hover:border-lime-400 hover:text-lime-400">
+                        Visit My GitHub ↗
+                    </a>
+                        </div>
+                    </section>
+             </main>
+
+             <!-- FOOTER -->
+              <footer class="border-t border-white/10">
+                <div class="max-w-6xl mx-auto px-6 py-7 flex flex-col sm:flex-row justify-between gap-3 text-sm text-gray-500">
+                    <p>© 2026 Matt Daniel T. Sacayan. All rights reserved.</p>
+                    <a href="#home" class="hover:text-lime-400 transition">
+                        Back to Top ↑
+                    </a>
+                </div>
+              </footer>
+        </body>
+        </html>
